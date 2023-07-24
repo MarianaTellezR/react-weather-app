@@ -8,7 +8,7 @@ function App() {
         <p>
           Designed and coded by{" "}
           <a
-            href="www.linkedin.com/in/mariana-tellez-resendiz-134354232"
+            href="https://www.linkedin.com/in/mariana-tellez-resendiz-134354232/"
             target="_blank"
             rel="noreferrer"
             title="LinkedIn"
