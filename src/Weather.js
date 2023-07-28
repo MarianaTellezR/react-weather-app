@@ -2,7 +2,7 @@ import React from "react";
 import "./Weather.css";
 
 export default function Weather() {
-  var icon = "01n";
+  var icon = "01d";
   var urlBackground = require("./img/backgrounds/" + icon + ".png");
   console.log(urlBackground);
 
