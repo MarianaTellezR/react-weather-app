@@ -2,8 +2,9 @@ import React from "react";
 import "./Weather.css";
 
 export default function Weather() {
-  let icon = "01d";
-  let urlBackground = `./img/${icon}.png`;
+  var icon = "01d";
+  var urlBackground = `./img/${icon}.png`;
+  console.log(urlBackground);
 
   return (
     <div
