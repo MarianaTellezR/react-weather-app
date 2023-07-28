@@ -2,14 +2,14 @@ import React from "react";
 import "./Weather.css";
 
 export default function Weather() {
-  var icon = "01d";
-  var urlBackground = `./img/${icon}.png`;
+  var icon = "01n";
+  var urlBackground = require("./img/backgrounds/" + icon + ".png");
   console.log(urlBackground);
 
   return (
     <div
       className="Weather"
-      style={{ backgroundImage: `url(${require("./img/01d.png")})` }}
+      style={{ backgroundImage: `url(${urlBackground})` }}
     >
       {/* Background Cool Section */}
       <div>
