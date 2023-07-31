@@ -5,6 +5,12 @@
   max-width: 1200px;
   border-radius: 15px;
   border: 1px solid rgb(73, 71, 158);
+}
+
+.Weather .upper-section-main {
+  padding: 20px;
+  border-radius: 15px;
+  padding-bottom: 500px;
   /*background-image: url("../img/01d.png");*/
   background-size: cover;
   background-position: center;
@@ -12,6 +18,30 @@
 }
 
 .Weather form {
-  margin: 30px 5px;
+  margin: 20px 10px;
   text-align: center;
+}
+
+.Weather .btn-search {
+  width: 90%;
+  color: rgb(68, 143, 204);
+}
+
+.Weather .btn-search:hover {
+  color: white;
+  background-color: rgb(88, 167, 231);
+  border: 1px solid rgb(88, 167, 231);
+}
+
+/* Small devices */
+@media (max-width: 580px) {
+  .Weather .upper-section-main {
+    padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 300px;
+  }
+  .Weather .btn-search {
+    margin-top: 15px;
+    width: 100%;
+  }
 }

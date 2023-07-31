@@ -7,23 +7,27 @@ export default function Weather() {
   console.log(urlBackground);
 
   return (
-    <div
-      className="Weather"
-      style={{ backgroundImage: `url(${urlBackground})` }}
-    >
+    <div className="Weather">
       {/* Background Cool Section */}
-      <div>
+      <div
+        className="upper-section-main"
+        style={{ backgroundImage: `url(${urlBackground})` }}
+      >
         <form>
           <div className="row">
-            <div className="col-8">
+            <div className="col-12 col-sm-9">
               <input
                 type="search"
                 placeholder="Enter a city"
                 className="form-control"
               />
             </div>
-            <div className="col-4">
-              <input type="submit" value="Search" className="btn btn-light" />
+            <div className="col-12 col-sm-3">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-light btn-search"
+              />
             </div>
           </div>
         </form>
