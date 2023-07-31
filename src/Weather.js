@@ -2,7 +2,32 @@ import React from "react";
 import "./Weather.css";
 
 export default function Weather() {
-  var icon = "01d";
+  var icon = "11n";
+
+  var colors = {
+    "01d": "#c797b6",
+    "01n": "#33337d",
+    "02d": "#e88681",
+    "02n": "#8877c7",
+    "03d": "#227ed8",
+    "03n": "#1c0666",
+    "04d": "#4bb9ef",
+    "04n": "#002161",
+    "09d": "#475266",
+    "09n": "#34518b",
+    "10d": "#61b9ff",
+    "10n": "#06367d",
+    "11d": "#d45f79",
+    "11n": "#023f59",
+    "13d": "#2c9ffd",
+    "13n": "#064070",
+    "50d": "#7b9ca6",
+    "50n": "#061a42",
+  };
+
+  var colorBackground = colors[icon];
+  console.log(colorBackground);
+
   var urlBackground = require("./img/backgrounds/" + icon + ".png");
   console.log(urlBackground);
 
@@ -60,7 +85,10 @@ export default function Weather() {
         </div>
       </div>
       {/* Below Background Section */}
-      <div className="lower-section-main">
+      <div
+        className="lower-section-main"
+        style={{ backgroundColor: colorBackground }}
+      >
         <div className="row">
           <div className="col-12 col-sm-4 weather-feels">
             <div className="row">
