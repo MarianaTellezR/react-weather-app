@@ -106,6 +106,74 @@
   padding-bottom: 500px;
   padding: 20px;
 }
+
+.Weather .lower-section-main p {
+  font-size: 20px;
+}
+
+.Weather .lower-section-main .weather-feels,
+.Weather .lower-section-main .weather-max-min {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weather .lower-section-main li {
+  font-size: 20px;
+}
+
+.Weather .lower-section-main .weather-now {
+  width: 80px;
+}
+
+.Weather .lower-section-main .feels-like-right,
+.Weather .lower-section-main .feels-like-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weather .lower-section-main .feels-like-right p {
+  margin-bottom: 0;
+}
+
+.Weather .lower-section-main .weather-stats-icon {
+  width: 30px;
+}
+
+.Weather .lower-section-main .weather-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.Weather .lower-section-main .weather-stats ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.Weather .lower-section-main .max-min-temperature-left,
+.Weather .lower-section-main .max-min-temperature-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weather .lower-section-main .max-min-temperature-right ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.Weather .lower-section-main .weather-max-min-icon {
+  width: 80px;
+}
+
 /* Small devices */
 @media (max-width: 580px) {
   /* UPPER SECTION WEATHER */
@@ -153,6 +221,13 @@
   }
 
   /* LOWER SECTION WEATHER */
+  .Weather .lower-section-main .weather-feels {
+    margin-bottom: 25px;
+  }
+
+  .Weather .lower-section-main .weather-stats {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 280px) {
@@ -181,4 +256,10 @@
   }
 
   /* LOWER SECTION WEATHER */
+  .Weather .lower-section-main p {
+    font-size: 15px;
+  }
+  .Weather .lower-section-main li {
+    font-size: 15px;
+  }
 }
