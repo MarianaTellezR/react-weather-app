@@ -7,6 +7,7 @@
   border: 1px solid rgb(73, 71, 158);
 }
 
+/* UPPER SECTION WEATHER */
 .Weather .upper-section-main {
   padding: 20px;
   border-radius: 15px;
@@ -96,8 +97,19 @@
   top: -52px;
 }
 
+/* LOWER SECTION WEATHER */
+.Weather .lower-section-main {
+  background-color: #c797b6;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding-bottom: 500px;
+  padding: 20px;
+}
 /* Small devices */
 @media (max-width: 580px) {
+  /* UPPER SECTION WEATHER */
+
   .Weather .upper-section-main {
     padding: 20px;
     border-radius: 15px;
@@ -139,9 +151,13 @@
     position: relative;
     top: -30px;
   }
+
+  /* LOWER SECTION WEATHER */
 }
 
 @media (max-width: 280px) {
+  /* UPPER SECTION WEATHER */
+
   .Weather .upper-section-main .location-icon {
     width: 20px;
     height: 20px;
@@ -163,4 +179,6 @@
     position: relative;
     top: -15px;
   }
+
+  /* LOWER SECTION WEATHER */
 }

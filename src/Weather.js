@@ -60,7 +60,7 @@ export default function Weather() {
         </div>
       </div>
       {/* Below Background Section */}
-      <div>
+      <div className="lower-section-main">
         <div className="row">
           <div className="col-12 col-sm-4">
             <p>Hello Box 1</p>
