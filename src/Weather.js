@@ -31,8 +31,18 @@ export default function Weather() {
             </div>
           </div>
         </form>
-        <h2>San Francisco</h2>
+
+        <div className="city-title-section">
+          <img
+            className="location-icon"
+            alt="City"
+            src={require("./img/location.png")}
+          />
+          <h2>San Francisco</h2>
+        </div>
+
         <h3>Fri, July 28 15:15</h3>
+
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h4>Sunny</h4>
