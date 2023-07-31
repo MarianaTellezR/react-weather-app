@@ -108,6 +108,7 @@
 
 .Weather .lower-section-main p {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .Weather .lower-section-main .weather-feels,
@@ -120,6 +121,7 @@
 
 .Weather .lower-section-main li {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .Weather .lower-section-main .weather-now {
@@ -147,7 +149,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .Weather .lower-section-main .weather-stats ul {
   list-style: none;
