@@ -57,6 +57,45 @@
   margin: 0 0 15px 90px;
   font-weight: 300;
 }
+
+.Weather .upper-section-main .weather-results {
+  margin: 20px 30px;
+}
+
+.Weather .upper-section-main .weather-results .weather-temperature-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weather .upper-section-main .weather-now {
+  width: 100px;
+}
+
+.Weather .upper-section-main h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Weather .upper-section-main .weather-temperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Weather .upper-section-main h1 {
+  font-size: 110px;
+  font-weight: 200;
+}
+
+.Weather .upper-section-main sup {
+  font-size: 35px;
+  font-weight: 300;
+  position: relative;
+  top: -52px;
+}
+
 /* Small devices */
 @media (max-width: 580px) {
   .Weather .upper-section-main {
@@ -89,5 +128,39 @@
   .Weather .upper-section-main h3 {
     text-align: center;
     margin: 0 0 15px 0;
+  }
+
+  .Weather .upper-section-main h1 {
+    font-size: 70px;
+  }
+
+  .Weather .upper-section-main sup {
+    font-size: 25px;
+    position: relative;
+    top: -30px;
+  }
+}
+
+@media (max-width: 280px) {
+  .Weather .upper-section-main .location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .Weather .upper-section-main h2 {
+    font-size: 20px;
+  }
+
+  .Weather .upper-section-main h3 {
+    font-size: 18px;
+  }
+  .Weather .upper-section-main h1 {
+    font-size: 40px;
+  }
+
+  .Weather .upper-section-main sup {
+    font-size: 18px;
+    position: relative;
+    top: -15px;
   }
 }

@@ -43,12 +43,19 @@ export default function Weather() {
 
         <h3>Fri, July 28 15:15</h3>
 
-        <div className="row">
-          <div className="col-sm-12 col-md-6">
+        <div className="row weather-results">
+          <div className="col-xs-12 col-sm-6 weather-temperature-info">
+            <img
+              className="weather-now"
+              alt="Today's Weather"
+              src={require("./img/01d.png")}
+            />
             <h4>Sunny</h4>
           </div>
-          <div className="col-sm-12 col-md-6">
-            <h1>23 °C</h1>
+          <div className="col-xs-12 col-sm-6 weather-temperature">
+            <h1>
+              23 <sup>°C</sup>
+            </h1>
           </div>
         </div>
       </div>
