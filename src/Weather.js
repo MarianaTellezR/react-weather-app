@@ -3,12 +3,12 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].main,
@@ -20,10 +20,9 @@ export default function Weather() {
       mintemp: response.data.main.temp_min,
       icon: response.data.weather[0].icon,
     });
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     var icon = weatherData.icon;
 
     var colors = {
@@ -85,14 +84,14 @@ export default function Weather() {
             <h2>{weatherData.city}</h2>
           </div>
 
-          <h3>Fri, July 28 15:15 {weatherData.icon}</h3>
+          <h3>Fri, July 28 15:15 </h3>
 
           <div className="row weather-results">
             <div className="col-xs-12 col-sm-6 weather-temperature-info">
               <img
                 className="weather-now"
                 alt={weatherData.description}
-                src={require("./img/01d.png")}
+                src={require("./img/" + icon + ".png")}
               />
               <h4>{weatherData.description}</h4>
             </div>
@@ -115,7 +114,7 @@ export default function Weather() {
                   <img
                     className="weather-now"
                     alt="Today's Weather"
-                    src={require("./img/01d.png")}
+                    src={require("./img/" + icon + ".png")}
                   />
                 </div>
                 <div className="col-12 col-sm-6 feels-like-right">
