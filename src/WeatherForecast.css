@@ -1,3 +1,16 @@
 .WeatherForecast {
   padding: 15px 5px;
 }
+
+.WeatherForecast p {
+  margin-bottom: 5px;
+}
+
+.WeatherForecast ul {
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.WeatherForecast .icon-section .icon-forecast {
+  width: 50px;
+}
