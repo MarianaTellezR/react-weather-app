@@ -11,6 +11,17 @@
   margin-bottom: 0px;
   padding-left: 0px;
 }
-.WeatherForecast .icon-section .icon-forecast {
+.WeatherForecast .forecast-section {
+  padding: 15px 10px;
+}
+.WeatherForecast .left-forecast,
+.WeatherForecast .right-forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WeatherForecast .left-forecast .icon-forecast {
   width: 50px;
 }
