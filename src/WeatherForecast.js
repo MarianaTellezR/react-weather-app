@@ -1,0 +1,9 @@
+import React from "react";
+
+export default function WeatherForecast() {
+  return (
+    <div className="WeatherForecast">
+      <p>Forecast 1</p>
+    </div>
+  );
+}

@@ -6,6 +6,10 @@
   border-radius: 15px;
 }
 
+.Weather .forecast-section {
+  border-radius: 10px;
+}
+
 /* UPPER SECTION WEATHER */
 .Weather .upper-section-main {
   padding: 20px;
@@ -174,6 +178,13 @@
   width: 80px;
 }
 
+@media (max-width: 767px) {
+  .Weather .forecast-section {
+    width: 95%;
+    display: block;
+    margin: 15px auto;
+  }
+}
 /* Small devices */
 @media (max-width: 580px) {
   /* UPPER SECTION WEATHER */
