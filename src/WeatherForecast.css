@@ -46,4 +46,56 @@
   width: 50px;
 }
 
+@media (max-width: 1160px) {
+  .WeatherForecast h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .WeatherForecast .forecast-section .day-forecast {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .WeatherForecast hr {
+    margin: 10px 5px;
+  }
+}
 
+@media (max-width: 983px) {
+  .WeatherForecast {
+    padding: 10px 5px;
+    margin: 15px 5px;
+  }
+
+  .WeatherForecast hr {
+    margin: 10px 5px;
+  }
+}
+
+@media (max-width: 780px) {
+  .WeatherForecast {
+    padding: 20px 5px;
+    margin: 34px 5px;
+  }
+  .WeatherForecast hr {
+    margin: 8px 5px;
+  }
+  .WeatherForecast .forecast-section .day-forecast {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .WeatherForecast h3 {
+    font-size: 20px;
+    margin: 25px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .WeatherForecast {
+    padding: 5px 5px;
+    margin: 20px 5px;
+  }
+
+  .WeatherForecast h3 {
+    margin: 15px 0px;
+  }
+}
