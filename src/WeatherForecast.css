@@ -73,11 +73,11 @@
 
 @media (max-width: 780px) {
   .WeatherForecast {
-    padding: 20px 5px;
-    margin: 34px 5px;
+    padding: 5px 5px;
+    margin: 10px 5px;
   }
   .WeatherForecast hr {
-    margin: 8px 5px;
+    margin: 2px 5px;
   }
   .WeatherForecast .forecast-section .day-forecast {
     font-size: 18px;
