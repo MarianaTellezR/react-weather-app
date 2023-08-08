@@ -16,6 +16,7 @@ export default function FormattedDate(props) {
     "Feb",
     "Mar",
     "Apr",
+    "May",
     "Jun",
     "Jul",
     "Aug",
