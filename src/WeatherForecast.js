@@ -20,15 +20,17 @@ export default function WeatherForecast(props) {
         {/* Day 1 */}
         <div className="row forecast-section">
           <p className="day-forecast">{forecast[0].dt}</p>
-          <div className="col-12 col-md-5 left-forecast">
+          <div className="col-12 col-md-6 left-forecast">
             <img
               className="icon-forecast"
               alt="Forecast"
               src={require("./img/01d.png")}
             />
-            <p>Light Rain</p>
+            <p className="text-capitalize">
+              {forecast[0].weather[0].description}
+            </p>
           </div>
-          <div className="col-12 col-md-7 right-forecast">
+          <div className="col-12 col-md-6 right-forecast">
             <p>
               {Math.round(forecast[0].temp.min)}°{" "}
               <strong>{Math.round(forecast[0].temp.max)}°</strong>
@@ -41,15 +43,15 @@ export default function WeatherForecast(props) {
         {/* Day 2 */}
         <div className="row forecast-section">
           <p className="day-forecast">Saturday</p>
-          <div className="col-12 col-md-5 left-forecast">
+          <div className="col-12 col-md-6 left-forecast">
             <img
               className="icon-forecast"
               alt="Forecast"
               src={require("./img/02d.png")}
             />
-            <p>Light Rain</p>
+            <p className="text-capitalize">Light Rain</p>
           </div>
-          <div className="col-12 col-md-7 right-forecast">
+          <div className="col-12 col-md-6 right-forecast">
             <p>
               16° <strong>19°</strong>
             </p>
@@ -61,15 +63,15 @@ export default function WeatherForecast(props) {
         {/* Day 3 */}
         <div className="row forecast-section">
           <p className="day-forecast">Sunday</p>
-          <div className="col-12 col-md-5 left-forecast">
+          <div className="col-12 col-md-6 left-forecast">
             <img
               className="icon-forecast"
               alt="Forecast"
               src={require("./img/02d.png")}
             />
-            <p>Light Rain</p>
+            <p className="text-capitalize">Light Rain</p>
           </div>
-          <div className="col-12 col-md-7 right-forecast">
+          <div className="col-12 col-md-6 right-forecast">
             <p>
               16° <strong>19°</strong>
             </p>
@@ -81,15 +83,15 @@ export default function WeatherForecast(props) {
         {/* Day 4 */}
         <div className="row forecast-section">
           <p className="day-forecast">Monday</p>
-          <div className="col-12 col-md-5 left-forecast">
+          <div className="col-12 col-md-6 left-forecast">
             <img
               className="icon-forecast"
               alt="Forecast"
               src={require("./img/02d.png")}
             />
-            <p>Light Rain</p>
+            <p className="text-capitalize">Light Rain</p>
           </div>
-          <div className="col-12 col-md-7 right-forecast">
+          <div className="col-12 col-md-6 right-forecast">
             <p>
               16° <strong>19°</strong>
             </p>
@@ -101,15 +103,15 @@ export default function WeatherForecast(props) {
         {/* Day 5*/}
         <div className="row forecast-section">
           <p className="day-forecast">Tuesday</p>
-          <div className="col-12 col-md-5 left-forecast">
+          <div className="col-12 col-md-6 left-forecast">
             <img
               className="icon-forecast"
               alt="Forecast"
               src={require("./img/02d.png")}
             />
-            <p>Light Rain</p>
+            <p className="text-capitalize">Light Rain</p>
           </div>
-          <div className="col-12 col-md-7 right-forecast">
+          <div className="col-12 col-md-6 right-forecast">
             <p>
               16° <strong>19°</strong>
             </p>
@@ -118,7 +120,7 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "e4a55b0edf399a39d6a1aefde210ce18";
+    let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
 
