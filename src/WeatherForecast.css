@@ -19,7 +19,7 @@
 }
 
 .WeatherForecast .forecast-section .day-forecast {
-  font-size: 20px;
+  font-size: 19px;
   padding-bottom: 15px;
 }
 
@@ -47,7 +47,25 @@
   width: 50px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1215px) {
+  .WeatherForecast {
+    padding: 5px 5px;
+    margin: 15px 5px;
+  }
+  .WeatherForecast h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+
+  .WeatherForecast .forecast-section .day-forecast {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .WeatherForecast hr {
+    margin: 10px 5px;
+  }
+}
+@media (max-width: 1161px) {
   .WeatherForecast h3 {
     font-size: 20px;
     margin: 10px 0px;
