@@ -4,7 +4,7 @@
 }
 
 .WeatherForecast h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px 0px;
   font-weight: 400;
 }
@@ -14,12 +14,16 @@
   text-align: center;
 }
 
+.WeatherForecast hr {
+    margin: 9px 5px;
+  }
+
 .WeatherForecast .forecast-section {
   padding: 15px 10px;
 }
 
 .WeatherForecast .forecast-section .day-forecast {
-  font-size: 19px;
+  font-size: 17px;
   padding-bottom: 10px;
 }
 
