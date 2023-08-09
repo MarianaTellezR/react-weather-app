@@ -1,11 +1,11 @@
 .WeatherForecast {
   padding: 15px 5px;
-  margin: 20px 5px;
+  margin: 10px 5px;
 }
 
 .WeatherForecast h3 {
   font-size: 20px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   font-weight: 400;
 }
 
@@ -20,7 +20,7 @@
 
 .WeatherForecast .forecast-section .day-forecast {
   font-size: 19px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .WeatherForecast .left-forecast,
