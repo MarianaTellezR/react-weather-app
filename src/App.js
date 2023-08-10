@@ -4,12 +4,12 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <Weather defaultCity="San Francisco"/>
+      <Weather defaultCity="San Francisco" />
       <footer>
         <p>
           Designed and coded by{" "}
           <a
-            href="https://www.linkedin.com/in/mariana-tellez-resendiz-134354232/"
+            href="https://www.linkedin.com/in/mariana-tellez-resendiz/"
             target="_blank"
             rel="noreferrer"
             title="LinkedIn"
